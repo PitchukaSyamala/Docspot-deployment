@@ -10,7 +10,7 @@ const AdminUsers = () => {
 
    const getUsers = async()=>{
       try {
-         const res = await axios.get('http://localhost:5002/api/admin/getallusers', {
+         const res = await axios.get('pitchuka-syamalas-projects/docspot-deployment/api/admin/getallusers', {
             headers: {
                Authorization : `Bearer ${localStorage.getItem("token")}`,
             },
