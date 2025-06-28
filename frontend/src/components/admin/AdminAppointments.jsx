@@ -10,7 +10,7 @@ const AdminAppointments = () => {
 
    const getAppointments = async () => {
       try {
-         const res = await axios.get('http://localhost:5002/api/admin/getallAppointmentsAdmin', {
+         const res = await axios.get('https://docspot-deployment.onrender.com/admin/getallAppointmentsAdmin', {
             headers: {
                Authorization: `Bearer ${localStorage.getItem('token')}`
             },
