@@ -18,7 +18,7 @@ const AdminHome = () => {
 
    const getUserData = async () => {
       try {
-         await axios.post('http://localhost:5002/api/user/getuserdata', {}, {
+         await axios.post('pitchuka-syamalas-projects/docspot-deployment/api/user/getuserdata', {}, {
             headers: {
                Authorization: "Bearer " + localStorage.getItem('token')
             },
