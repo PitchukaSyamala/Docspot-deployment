@@ -41,7 +41,7 @@ const DoctorList = ({ userDoctorId, doctor, userdata }) => {
          formData.append('userInfo', JSON.stringify(userdata));
          formData.append('doctorInfo', JSON.stringify(doctor));
 
-         const res = await axios.post('http://localhost:5002/api/user/getappointment', formData, {
+         const res = await axios.post('pitchuka-syamalas-projects/docspot-deployment/api/user/getappointment', formData, {
             headers: {
                Authorization: `Bearer ${localStorage.getItem("token")}`,
                'Content-Type': 'multipart/form-data',
