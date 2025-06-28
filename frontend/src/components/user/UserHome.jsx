@@ -39,7 +39,7 @@ const UserHome = () => {
 
    const getDoctorData = async () => {
       try {
-         const res = await axios.get('pitchuka-syamalas-projects/docspot-deployment/api/user/getalldoctorsu', {
+         const res = await axios.get('https://docspot-deployment.onrender.com/api/user/getalldoctorsu', {
             headers: {
                Authorization: "Bearer " + localStorage.getItem('token')
             },
