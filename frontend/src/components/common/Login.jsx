@@ -30,7 +30,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("pitchuka-syamalas-projects/docspot-deployment/api/user/login", user);
+      const res = await axios.post("https://docspot-deployment.onrender.com/api/user/login", user);
       if (res.data.success) {
         localStorage.setItem('token', res.data.token);
         localStorage.setItem('userData', JSON.stringify(res.data.userData));
