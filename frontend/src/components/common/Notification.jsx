@@ -38,7 +38,7 @@ const Notification = () => {
    }
    const handledeleteAllMark = async () => {
       try {
-         const res = await axios.post('http://localhost:5002/api/user/deleteallnotification', { userId: user._id }, {
+         const res = await axios.post('pitchuka-syamalas-projects/docspot-deployment/api/user/deleteallnotification', { userId: user._id }, {
             headers: {
                Authorization: `Bearer ${localStorage.getItem('token')}`,
             },
