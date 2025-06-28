@@ -31,7 +31,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('pitchuka-syamalas-projects/docspot-deployment/api/user/register', user);
+      const res = await axios.post('https://docspot-deployment.onrender.com/api/user/register', user);
       if (res.data.success) {
         message.success('Registered Successfully');
         navigate('/login');
