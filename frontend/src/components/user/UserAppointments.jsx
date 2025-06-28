@@ -30,7 +30,7 @@ const UserAppointments = () => {
 
   const getUserAppointment = async (uid) => {
     try {
-      const res = await axios.get('http://localhost:5002/api/user/getuserappointments', {
+      const res = await axios.get('pitchuka-syamalas-projects/docspot-deployment/api/user/getuserappointments', {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
@@ -50,7 +50,7 @@ const UserAppointments = () => {
 
   const getDoctorAppointment = async (uid) => {
     try {
-      const res = await axios.get('http://localhost:5002/api/doctor/getdoctorappointments', {
+      const res = await axios.get('pitchuka-syamalas-projects/docspot-deployment/api/doctor/getdoctorappointments', {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
@@ -70,7 +70,7 @@ const UserAppointments = () => {
 
   const handleStatus = async (uid, appointmentId, status) => {
     try {
-      const res = await axios.post('http://localhost:5002/api/doctor/handlestatus', {
+      const res = await axios.post('pitchuka-syamalas-projects/docspot-deployment/api/doctor/handlestatus', {
         userid: uid,
         appointmentId,
         status,
@@ -93,7 +93,7 @@ const UserAppointments = () => {
 
   const handleDownload = async (url, appointId) => {
     try {
-      const res = await axios.get('http://localhost:5002/api/doctor/getdocumentdownload', {
+      const res = await axios.get('pitchuka-syamalas-projects/docspot-deployment/api/doctor/getdocumentdownload', {
         headers: {
           'Authorization': `Bearer ${localStorage.getItem("token")}`,
         },
